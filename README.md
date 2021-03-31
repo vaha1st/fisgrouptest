@@ -14,9 +14,9 @@
 3.	Определите понятие «злостный читатель».  Предложите алгоритм для поиска самого злостного читателя библиотеки. На любом языке программирования опишите алгоритм поиска такого читателя. Алгоритм должен основываться на модели данных, которую вы описали в задании 1.
 
 ### Выполнено:
-1. Модель в виде диаграммы, изображения доступны в [sql/](https://github.com/vaha1st/figrouptest/raw/master/sql/). Так же в этой директории вы найдете все sql скрипты для создания БД и не только.
-2. [Sql-запрос](https://github.com/vaha1st/figrouptest/blob/master/sql/most_popular.sql)
-3. Java код находится в [src/](https://github.com/vaha1st/figrouptest/tree/master/src/main/java/ru/fisgroup/test). Для проверки алгоритма эквивалентный [sql-запрос](https://github.com/vaha1st/figrouptest/blob/master/sql/Check_algorythm.sql)
+1. Модель в виде диаграммы, изображения доступны в [sql/](https://github.com/vaha1st/fisgrouptest/raw/master/sql/). Так же в этой директории вы найдете все sql скрипты для создания БД и не только.
+2. [Sql-запрос](https://github.com/vaha1st/fisgrouptest/blob/master/sql/most_popular.sql)
+3. Java код находится в [src/](https://github.com/vaha1st/fisgrouptest/tree/master/src/main/java/ru/fisgroup/test). Для проверки алгоритма эквивалентный [sql-запрос](https://github.com/vaha1st/fisgrouptest/blob/master/sql/Check_algorythm.sql)
 4. Для контроля доступных экземпляров книг было создано представление book_amount. `select * from book_amount;`
 
 В качестве СУБД выбрана mysql.
@@ -29,8 +29,8 @@
     
         bash init_mysql_db.sh
         
-    1.2. Если у вас windows или др, то необходимо вручную запустить скрипты [этот](https://github.com/vaha1st/figrouptest/blob/master/sql/create_db.sql) и 
-  [вот этот](https://github.com/vaha1st/figrouptest/blob/master/sql/fillup_db.sql) в mysql workbench.
+    1.2. Если у вас windows или др, то необходимо вручную запустить скрипты [этот](https://github.com/vaha1st/fisgrouptest/blob/master/sql/create_db.sql) и 
+  [вот этот](https://github.com/vaha1st/fisgrouptest/blob/master/sql/fillup_db.sql) в mysql workbench.
   
 2. Из корня собрать проект:
 ```
@@ -43,4 +43,4 @@ java -cp target/hardcoreReader-1.0-SNAPSHOT.jar ru.fisgroup.test.HardcoreReader
 ```
 
 4. Ввести желаемый год для поиска "злостного читателя". Для теста в БД было внесено немного данных. Период "работы" библотеки 2019-2021 и злостный читатель будет найден только при запросе года из этого периода. Для более глубокого тестирования можно вручную подобавлять записей в БД.
-![screenshot](https://github.com/vaha1st/figrouptest/raw/master/sql/Model.png)
+![screenshot](https://github.com/vaha1st/fisgrouptest/raw/master/sql/Model.png)
